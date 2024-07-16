@@ -112,15 +112,11 @@ html, body {
     font-size: min(max(2vw, 4vw), 26px);
 }
 
-.bronte{
-    width: 30vw;
-}
-
 .projects {
-    padding: 3em;
+    padding: 1em;
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .project {
@@ -128,10 +124,10 @@ html, body {
 }
 
 .project_pic {
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: .5em;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 1em;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
     margin: 0 auto; /* Center the project container horizontally on the page */
     display: flex;
     flex-direction: column;
@@ -154,8 +150,8 @@ html, body {
 .project_image{
     left: 5vh;
     max-width: 300px;
-    border-radius: .5em;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    border-radius: 1em;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
     margin: 0 auto; /* Center the project container horizontally on the page */
 
 }
@@ -179,8 +175,27 @@ html, body {
 }
 
 
+.collage_container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* Add styles for your collage here */
+}
+
+.video-wrapper {
+    position: absolute; /* Use absolute positioning to place the video independently */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Ensure it doesn't grow too large */
+}
+
 .video-container {
-    width: 80%; /* Adjust width as needed */
+    width: 100%; /* Container takes full width of the wrapper */
     height: 0;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     position: relative;
@@ -192,8 +207,8 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: .5em;
+    border-radius: 2em;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-    margin: 0 auto; /* Center the project container horizontally on the page */
+    justify-content: center;
+    align-items: center;
 }
-

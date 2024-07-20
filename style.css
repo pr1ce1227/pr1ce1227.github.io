@@ -11,7 +11,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #b3cde0;
+    background-color: #FAF3E9;
     height: 100%;
     width: 100%;
 
@@ -45,7 +45,7 @@ html, body {
     display: inline-block;
     padding: .5em; 
     text-decoration: none;
-    color: white;
+    color: #FAF3E9;
     font-size: 2.5vw;
     font-size: min(max(16px, 4vw), 32px);
     text-decoration: none;
@@ -57,11 +57,11 @@ html, body {
 
 .main-header {
     position: sticky;
-    background-color: rgba(0, 91, 150, 0.5);
-    color: white ;
+    background-color: rgba(1, 47, 78, 0.5);
+    color: #FAF3E9 ;
     padding: 10px 0;
     text-align: center;
-    border: 1em solid #b3cde0;
+    border: 1em solid #FAF3E9;
     border-radius: 60px; /* Adjust the value to increase or decrease the roundness */ 
 }
 
@@ -191,18 +191,20 @@ html, body {
 }
 
 .video-container {
-    width: 100%; /* Container takes full width of the wrapper */
-    Height: 60%;
+    width: 100%; /* Container takes full width of the parent */
+    height: 0;
+    padding-bottom: 50%; /* 16:9 aspect ratio */
     position: relative;
+    overflow: hidden; /* Ensure no overflow of the iframe */
 }
 
 .video-container iframe {
     position: absolute; /* Positions out of the flow, but according to the nearest parent */
-    top: 0; right: 0; /* Ensure the iframe covers the entire container */
-    bottom: 0; left: 0;
-    width: 55%; /* Keep the iframe size as before */
-    height: 100%; /* Keep the iframe size as before */
-    margin: auto; /* Center the iframe within the container */
+    top: 0;
+    left: 50%;
+    width: 75%; /* Keep the iframe size as before */
+    height: 75%; /* Adjust to keep proportionate size */
+    transform: translateX(-50%); /* Center the iframe horizontally */
     border-radius: 2em;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
 }

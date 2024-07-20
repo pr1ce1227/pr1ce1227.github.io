@@ -71,6 +71,7 @@ html, body {
 /* Content */
 
 .content-section {
+    position: relative;
     margin: 1em; 
 }
 
@@ -107,6 +108,7 @@ html, body {
 }
 
 .gen_text {
+    position: relative;
     font-family: "PTSAN";
     font-size: 2vw;
     font-size: min(max(2vw, 4vw), 26px);
@@ -119,20 +121,33 @@ html, body {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+.projects {
+    padding: 1em;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
 .project {
-    max-height: 500 px;
+    max-height: 500px;
 }
 
 .project_pic {
-    max-width: 400px;
-    max-height: 400px;
+    width: 350px; /* Set a fixed width for the container */
+    height: 300px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide any overflow */
     border-radius: 1em;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
     margin: 0 auto; /* Center the project container horizontally on the page */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Adjust this value as needed */
+}
+
+.project_pic img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: contain; /* Maintain the aspect ratio and contain the image within the container */
 }
 
 .project_details {
@@ -140,6 +155,7 @@ html, body {
     text-align: center; /* Center the text */
     box-sizing: border-box; /* Include padding and border in the element's width */
 }
+
 
 .project_details strong,
 .project_details span {
@@ -174,41 +190,19 @@ html, body {
     padding: 15px;
 }
 
-
-.collage_container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* Add styles for your collage here */
-}
-
-.video-wrapper {
-    position: absolute; /* Use absolute positioning to place the video independently */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the element exactly */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%; /* Adjust width as needed */
-    max-width: 800px; /* Ensure it doesn't grow too large */
-}
-
 .video-container {
     width: 100%; /* Container takes full width of the wrapper */
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    Height: 60%;
     position: relative;
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute; /* Positions out of the flow, but according to the nearest parent */
+    top: 0; right: 0; /* Ensure the iframe covers the entire container */
+    bottom: 0; left: 0;
+    width: 55%; /* Keep the iframe size as before */
+    height: 100%; /* Keep the iframe size as before */
+    margin: auto; /* Center the iframe within the container */
     border-radius: 2em;
     box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-    justify-content: center;
-    align-items: center;
 }

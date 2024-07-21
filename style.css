@@ -11,7 +11,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FAF3E9;
+    background-color: #e7e6e5;
     height: 100%;
     width: 100%;
 
@@ -45,23 +45,23 @@ html, body {
     display: inline-block;
     padding: .5em; 
     text-decoration: none;
-    color: #FAF3E9;
+    color: white;
     font-size: 2.5vw;
     font-size: min(max(16px, 4vw), 32px);
     text-decoration: none;
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
+    background-color: #e7e6e5
 }
 
 .main-header {
     position: sticky;
-    background-color: rgba(1, 47, 78, 0.5);
-    color: #FAF3E9 ;
+    background-color: rgba(1, 54, 85, 0.5);
+    color: white ;
     padding: 10px 0;
     text-align: center;
-    border: 1em solid #FAF3E9;
+    border: 1em solid #e7e6e5;
     border-radius: 60px; /* Adjust the value to increase or decrease the roundness */ 
 }
 
@@ -79,6 +79,7 @@ html, body {
     max-width: 1100px; 
     margin: 0 auto;
     padding: 0 1.5em; 
+    border-bottom: 20px solid rgba(1, 54, 85, 0.5); /* Assuming you want a bottom border */
 }
 
 .BIO_Image {
@@ -93,10 +94,7 @@ html, body {
     
     max-width: 1100px;
     clear: both;
-    font-family: "PTSAN_B";
-    margin: 30px 0 0 30px;
-    margin: 0 auto;
-    padding: 1.5em 1.5em; 
+    font-family: "PTSAN_B"; 
     font-size: 2vw;
     font-size: min(max(14px, 4vw), 26px);
 }
@@ -104,7 +102,7 @@ html, body {
 .contact-center {
 
    text-align: center;
-   font-size: min(max(20px, 4vw),  100px);
+   font-size: min(max(20px, 4vw),  40px);
 }
 
 .gen_text {
@@ -180,8 +178,8 @@ html, body {
 }
 
 .collage_image {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 

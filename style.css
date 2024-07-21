@@ -65,7 +65,37 @@ html, body {
     border-radius: 60px; /* Adjust the value to increase or decrease the roundness */ 
 }
 
+.projects-header{
+    border: 1em;
+    padding: 3px 1em;
+    font-size: min(max(20px, 4vw),  40px);
+    color: white;
+    background-color: rgba(1, 54, 85, 0.5);
+}
 
+.video-container {
+    width: 80%; /* Container takes 80% width of the parent */
+    position: relative;
+    overflow: hidden; /* Ensure no overflow of the iframe */
+    margin: 0 auto 1em; /* Center horizontally and add space below */
+    max-height: 800px; /* Set the maximum height */
+}
+
+.video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio padding */
+}
+
+.video-container iframe {
+    position: absolute; /* Position out of the flow, but according to the nearest parent */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border-radius: 2em;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+}
 
 
 /* Content */
@@ -188,21 +218,4 @@ html, body {
     padding: 15px;
 }
 
-.video-container {
-    width: 100%; /* Container takes full width of the parent */
-    height: 0;
-    padding-bottom: 50%; /* 16:9 aspect ratio */
-    position: relative;
-    overflow: hidden; /* Ensure no overflow of the iframe */
-}
 
-.video-container iframe {
-    position: absolute; /* Positions out of the flow, but according to the nearest parent */
-    top: 0;
-    left: 50%;
-    width: 75%; /* Keep the iframe size as before */
-    height: 75%; /* Adjust to keep proportionate size */
-    transform: translateX(-50%); /* Center the iframe horizontally */
-    border-radius: 2em;
-    box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-}

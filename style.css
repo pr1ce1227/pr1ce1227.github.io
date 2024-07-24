@@ -220,4 +220,82 @@ html, body {
     padding: 15px;
 }
 
+.photo_grid_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    width: 80vw;
+    max-width: 640px;
+}
+
+.photo-grid .img {
+    overflow: hidden;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Project_Title{
+    position: relative;
+    font-family: "PTSAN";
+    text-align: center;
+    font-size: min(max(2vw, 5vw), 72px);
+}
+
+.list_container {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    max-width: 900px;
+    width: 100%;
+    margin: 25px; 
+
+}
+
+.styled-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.styled-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+    font-size: min(max(2vw, 4vw), 14px);
+    color: #000000;
+}
+
+.summary{
+    font-size: 2vw;
+    font-size: min(max(2vw, 4vw), 12px);
+}
+
+.styled-list li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%; /* Align vertically to the middle of the text */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    color: #015974; /* Bullet color */
+    font-size: 24px;
+    line-height: 1;
+}
+
+.styled-list li:last-child {
+    margin-bottom: 0;
+}
+
 

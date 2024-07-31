@@ -274,13 +274,13 @@ html, body {
     padding-left: 20px;
     margin-bottom: 10px;
     font-size: 2vw;
-    font-size: min(max(2vw, 4vw), 14px);
+    font-size: min(max(2vw, 4vw), 16px);
     color: #000000;
 }
 
 .summary{
     font-size: 2vw;
-    font-size: min(max(2vw, 4vw), 12px);
+    font-size: min(max(2vw, 4vw), 16px);
 }
 
 .styled-list li:before {

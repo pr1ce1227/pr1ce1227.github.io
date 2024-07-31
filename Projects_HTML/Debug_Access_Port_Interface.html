@@ -1,8 +1,9 @@
 <!DOCTYPE html>
     <head>
-        <title> Line_Follower_2000</title>
+        <title>Debug_Access_Port</title>
         <meta name = "Debug_Access_Port" content = "Custam DAP Interface">
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="Images/JCM_Setup" href="../Images/BYU_Stretch_Y_Logo.png">
     </head>
 
     <body>  
@@ -18,11 +19,66 @@
         </header> 
 
 
-        <section class="content-section container">
+        <div class="photo_grid_center">
+            <div class="photo-grid">
+                
+                <div class="img"><img src="/Images/JCM_Setup.jpg" srcset="photo4-2x.jpg 2x" alt="Photo 4"></div>
+                <div class="img"><img src="/Images/DAP_SM.png"          srcset="photo1-2x.jpg 2x" alt="Photo 1"></div>
+                <div class="img"><img src="/Images/Radiation_Setup.JPG"     srcset="photo5-2x.jpg 2x" alt="Photo 5"></div>
+            </div>
+        </div>
 
-            <h2 class="header">Debug Access Port Interface</h2>
+
+
+        <section class="content-section container">
+            
 
             <p class="gen_text">
+
+                
+                <div class="list_container">
+                    <h1 class="header">Main Concepts</h1>
+                    <ul class="styled-list">                        <li>Radiation effects including varying LET from different ions, energies, and fluence</li>
+                        <li>ARM Debug Access Port Interface</li>
+                        <li>Used for accessing Arm CoreSight Debug tools </li>
+                        <li>Acces to global address space, coresight registers, and virtual UARTS</li>
+                        <li>Much faster then SmartLynx tools as we can use our custom JTAG interface (JCM) to communicate at very fast speeds</li>
+                        <li>Had to work at very low level handling bit control for both JTAG TAP controller and DAP interface controller shown in the diagram above</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Materials Used</h1>
+                    <ul class="styled-list">
+                        <li>Microzed 7010 (JCM / JTAG)</li>
+                        <li>Built custom CPP library to interface with controller</li>
+                        <li>Utilizes JCM Drivers and firmware</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Summary</h1>
+                    <div class ="summary">
+                        This was a very challenging low level software project that used the firmware of the JCM (JTAG interface). This project was tuff as most things were either not 
+                        documented well or were so heavily documented it was impossible to find anything. It was also challenging as once the signal left the jcm over the JTAG cable it 
+                        was very hard to see what was going on in the early stages. That being said I did eventually get this to work and it has proven to be very useful. Essentially what this 
+                        does is it gives us very low level acces to the board at run time including acces to the coresight registers and global address space. With this access I can querry processor
+                        registers and runtime to check things like the PC to see if they have been pushed off track. I can also set up "virtual" UARTs to each of the processors and pull of logs at runtime
+                        during a test. Not to mention with acces to the global address space and the NOC I virtually have acces to every peice of the board.  
+                        <br><br>
+                        I learned a lot while working on this project, including that sometimes its faster to go a little slower. Working with the bits and various controllers (TAP and DAP) was tidious and 
+                        required exact precision. I also learned a little more about building custom libraries in C++ and was able to abstract all the heavy lifting from the user. It's as simple as writing
+                        a json file with the registers you want to read or write at run time and with a click of a button you have access to nearly the entire board. My work with this new feature has mainly
+                        been involved with the Xilin Versal ACAP chip.
+                    </div>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Source Code</h1>
+                    <ul class="styled-list">
+                        <li>Materials for this project are unfortunatly Proprietary</li>
+                    </ul>
+                </div>
             
             </p>
             <footer class="contact-info">

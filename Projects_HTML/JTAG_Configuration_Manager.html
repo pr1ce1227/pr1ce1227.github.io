@@ -1,8 +1,9 @@
 <!DOCTYPE html>
     <head>
-        <title> Line_Follower_2000</title>
+        <title>JTAG_Configuration_Manager</title>
         <meta name = "JTAG_Configuration_Manager" content = "Custom Universal JTAG Configuration manger">
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="Images/JCM_Setup" href="../Images/BYU_Stretch_Y_Logo.png">
     </head>
 
     <body>  
@@ -17,13 +18,67 @@
             </nav>
         </header> 
 
+        <div class="photo_grid_center">
+            <div class="photo-grid">
+                <div class="img"><img src="/Images/JCM_Setup.jpg" srcset="photo4-2x.jpg 2x" alt="Photo 4"></div>
+                <div class="img"><img src="/Images/xrtc_board.jpg"          srcset="photo1-2x.jpg 2x" alt="Photo 1"></div>
+                <div class="img"><img src="/Images/Radiation_Setup.JPG"     srcset="photo5-2x.jpg 2x" alt="Photo 5"></div>
+            </div>
+        </div>
+
+
 
         <section class="content-section container">
+            
 
-            <h2 class="header">JTAG Configuration Manger (JCM)</h2>
+            <p class="gen_text">
 
-            <p class="gen_text"> 
+                
+                <div class="list_container">
+                    <h1 class="header">Main Concepts</h1>
+                    <ul class="styled-list">                        <li>Radiation effects including varying LET from different ions, energies, and fluence</li>
+                        <li>JTAG Interface</li>
+                        <li>Used for Configuration, Memory Scrubbing, Debug, Logging</li>
+                        <li>Full stack project, Contributed with VHDL design, driver implemenation and software</li>
+                        <li>Used during radiation testing, can see in radiation test photos</li>
+                    </ul>
+                </div>
 
+                <div class="list_container">
+                    <h1 class="header">Materials Used</h1>
+                    <ul class="styled-list">
+                        <li>Microzed 7010 (JTAG)</li>
+                        <li>In house JCM Carrier Board(Did not work on this)</li>
+                        <li>VHDL, Linux Drivers, Cross Compilation, JTAG Protocol (Handled in firmware design)</li>
+                        <li>Extensive Vivado use with build system scripting</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Summary</h1>
+                    <div class ="summary">
+                        The JCM has been an on-going project at BYU and happens to be the first project I did research on. I am still using this board today with my research
+                        on AI engines. This was a fun project and gave me my first glimpse at building a full stack system. I began my working by working with the custom JTAG IP 
+                        built by BYU students. There was a known bug when transfering data LSB first. I worked with testbenches to get to find and fix this bug then implemented the new 
+                        IP in the system project incorporating the IP in the block design. 
+                        <br><br>
+                        I then began working with the linux character drivers we built to interface with this IP. I learned all bout the kernal, system calls and how these call could 
+                        be manipulated to read and write the register on our JTAG IP which would in turn control the device. I also learned about DMA's and how they can be used to free up 
+                        your processor to perform other tasks. 
+                        <br><br>
+                        We still use this board to configure other boards that we are working with including the Xilinx Versal ACAP. We also use it for logging and debugging as you will see in 
+                        my ARM DAP project. I am constantly updating the software that is used with this board to support new boards and new functionality. It has been on this project that I learned
+                        much about cmake, cross compiling, github and how to manage a large scale project. This board has proven to be invaluable and I'm glad to have been one of the students to 
+                        have worked on it. 
+                    </div>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Source Code</h1>
+                    <ul class="styled-list">
+                        <li>Materials for this project are unfortunatly Proprietary</li>
+                    </ul>
+                </div>
             
             </p>
             <footer class="contact-info">

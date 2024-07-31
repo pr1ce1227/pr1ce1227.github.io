@@ -1,8 +1,9 @@
 <!DOCTYPE html>
     <head>
-        <title> Line_Follower_2000</title>
+        <title>RISCV_Proccesor_FPGA</title>
         <meta name = "RISCV_Processor" content = "School Project">
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="Images/JCM_Setup" href="../Images/BYU_Stretch_Y_Logo.png">
     </head>
 
     <body>  
@@ -16,28 +17,79 @@
                 </ul>
             </nav>
         </header> 
-
-
+ 
         <div class = "video-container"> 
-            <iframe 
-            src="https://www.youtube.com/embed/FeNROC40hKo?si=AjtlpWr9nHOP6bUO" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-
-
+            <iframe
+                width="560"
+                height="315" 
+                src="https://www.youtube.com/embed/FeNROC40hKo?si=AjtlpWr9nHOP6bUO" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
         </div>  
+
+        <div class="photo_grid_center">
+            <div class="photo-grid">
+                <div class="img"><img src="../Images/Air_Hockey.JPG"          srcset="photo1-2x.jpg 2x" alt="Photo 1"></div>
+                <div class="img"><img src="../Images/BASYs3_Board.JPG"  srcset="photo2-2x.jpg 2x" alt="Photo 2"></div>
+            </div>
+        </div>
+
 
 
         <section class="content-section container">
+            
 
-            <h2 class="header">RISCV Processor FPGA Assembly</h2>
+            <p class="gen_text">
 
-            <p class="gen_text"> 
+                
+                <div class="list_container">
+                    <h1 class="header">Main Concepts</h1>
+                    <ul class="styled-list">                       
+                        <li>Custom RiscV Processor</li>
+                        <li>Built using system Verilog on Basys3 Board</li>
+                        <li>Computer Architecture (Fetch, Decode, Branch, ALU, Memory, Pipelining...)</li>
+                        <li>Wrote Assembly Code to run on our RiscV Processor</li>
+                        <li>Using Assembly and writing to the VGA port was able to creat air hockey (Took 40+ hours in assembly)</li>
+                    </ul>
+                </div>
 
+                <div class="list_container">
+                    <h1 class="header">Materials Used</h1>
+                    <ul class="styled-list">
+                        <li>Basys3 Board</li>
+                        <li>32 bit RiscV design</li>
+                        <li>VGA for graphics</li>
+                        <li>Assembly instructions written compiled and loaded in bram</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Summary</h1>
+                    <div class ="summary">
+                        This has to be my favorite project that I have accomplished. I have always been fascinated by computer architecture, and being able to build a processor
+                        from the ground up, then runing a game on it that I built was very exciting. We spent the class learning all about computer architecture then reflected what
+                        we had learned into our project of building a 32 bit RisV processor. The processor design included building data memory and program memory in bram, followed by
+                        building a full pipeline including fetch, decode, branch, alu, memory, and store unit. In the class we went a little bit further and cover ECC protection, Virtual 
+                        memory, Paging, advanced pipelining, paralellism / multi core and modern design. These were obviously too complicated for a 1 semester class but layed a great foundation
+                        for computer architecture. 
+                        <br><br>
+                        In the video you can see the Air-Hockey game that I built. The processor design was structured by the class however the game was left completly up to us to decide. I picked
+                        a more challenging project to be sure as everything had to be written in assembly and then run on the processor that I built. However the challenge was very fun and I was happy 
+                        with the result. I ended up winning first place for the best game and winning 200$. I was feeling rich until I realized I had spent over 40+ hours on the assembly code alone. Not
+                        a great pay rate per hour. 
+                    </div>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Source Code</h1>
+                    <ul class="styled-list">
+                        <li> <a href="https://github.com/pr1ce1227/Ecen323">GitHub_Repo</a> </li>
+                    </ul>
+                </div>
             
             </p>
             <footer class="contact-info">
@@ -48,7 +100,6 @@
                 </ul>
             </footer>
         </section>
- 
 
 
 

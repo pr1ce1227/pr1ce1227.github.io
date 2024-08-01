@@ -105,6 +105,11 @@ html, body {
 .content-section {
     position: relative;
     margin: 1em; 
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center; /* Optional, for horizontal centering */
+    /* height: 100vh; Adjust as necessary */
 }
 
 .container {
@@ -112,6 +117,7 @@ html, body {
     margin: 0 auto;
     padding: 0 1.5em; 
     border-bottom: 20px solid rgba(1, 54, 85, 0.5); /* Assuming you want a bottom border */
+    
 }
 
 .BIO_Image {
@@ -123,12 +129,11 @@ html, body {
 }
 
 .contact-info {
-    
     max-width: 1100px;
     clear: both;
     font-family: "PTSAN_B"; 
-    font-size: 2vw;
     font-size: min(max(14px, 4vw), 26px);
+    align-self: flex-start; /* Aligns the item to the left within the flex container */
 }
 
 .contact-center {
@@ -261,6 +266,7 @@ html, body {
     max-width: 900px;
     width: 100%;
     margin: 25px; 
+    align-self: center;
 
 }
 
@@ -298,4 +304,13 @@ html, body {
     margin-bottom: 0;
 }
 
+.diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.diagram {
+    width: min(635px, 80vw);
+    border-radius: 10px;
+}

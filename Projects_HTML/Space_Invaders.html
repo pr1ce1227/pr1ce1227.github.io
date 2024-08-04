@@ -3,6 +3,7 @@
         <title> Space_Invaders</title>
         <meta name = "Space_Invaders" content = "Space Invaders">
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="Images/JCM_Setup" href="../Images/BYU_Stretch_Y_Logo.png">
     </head>
 
     <body>  
@@ -18,26 +19,85 @@
         </header> 
 
 
+        <h1 class="Project_Title">Space Invaders</h1>
+        
+
+
         <div class = "video-container"> 
             <iframe 
-                src="https://www.youtube.com/embed/LQz_cLtp0nU?si=0ebxvkcup29VbG82" 
+                src="https://www.youtube.com/embed/nVboiObPCO4?si=NcW2-ziZscFcuJgy" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
             </iframe>
-
-
         </div>  
+
+   
+
+        
+        <div class="diagram-container">
+            <img src="../Images/PYNQ.jpg" alt="Diagram" class="diagram">
+        </div>
+
+
+        <div class="diagram-container">
+            <img src="../Images/Space_Invaders_BD.png" alt="Diagram" class="diagram">
+        </div>
+
+        <div class="diagram-container">
+            <img src="../Images/Space_Invader_Software_Stack.png" alt="Diagram" class="diagram">
+        </div>
 
 
         <section class="content-section container">
+            
 
-            <h2 class="header">Space Invaders</h2>
+            <p class="gen_text">
 
-            <p class="gen_text"> 
+                
+                <div class="list_container">
+                    <h1 class="header">Main Concepts</h1>
+                    <ul class="styled-list">                        
+                        <li>Linux Drivers (Focus on Character Driver)</li>
+                        <li>Linux Kernal, system calls, file system</li>
+                        <li>Full stack, implementing System Verilog design, associated driver, software driver interface, software (Actual Game)</li>
+                        <li>Large C++ project</li>
+                        <li>Worked with audio buffers to drive sound</li>
+                    </ul>
+                </div>
 
+                <div class="list_container">
+                    <h1 class="header">Materials Used</h1>
+                    <ul class="styled-list">
+                        <li>Xilinx PYNQ-Z2 Board</li>
+                        <li>SD card (Holds operating system, custom drivers)</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Summary</h1>
+                    <div class ="summary">
+                        This was yet another very fun school project. As mentioned above this was a full stack project including a little design in system verilog, character driver
+                        development, software driver interface and finally a large c++ project to run the actual space invaders game. I did not build the entire Hardware design as shown 
+                        in the image rather the basic block design was provided to the class and went in and edited the IP's needed for the project. I learned a lot in this project from 
+                        how to interface with hardware through registers, importance of timing and most importantly how to link the software world to the hardware world with linux drivers. This 
+                        has always beeen something thats intrigued me and what better way to learn then building a fun Space invaders game. 
+                        <br><br>
+                        I failed to get a final recording of this project as I didn't think to make this website until after the project was submitted. In this video you can see the basic functionality
+                        of the game. However, I did add audio to the system and incorporated a driver to adjust the clock speed of the game through sysfs rather than using a device file as was done 
+                        with the main character driver for the game. 
+               
+                    </div>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Source Code</h1>
+                    <ul class="styled-list">
+                        <li>Materials for this project are unfortunatly Proprietary</li>
+                    </ul>
+                </div>
             
             </p>
             <footer class="contact-info">
@@ -48,6 +108,7 @@
                 </ul>
             </footer>
         </section>
+ 
  
 
 

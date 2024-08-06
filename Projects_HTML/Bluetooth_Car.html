@@ -32,31 +32,67 @@
         </div>  
 
 
+        <div class="diagram-container">
+            <img src="../Images/Bluetooth_Car.jpg" alt="Diagram" class="diagram">
+        </div>
+        <div class="diagram-container">
+            <img src="../Images/bluetooth_car_cad.jpg" alt="Diagram" class="diagram">
+        </div>
+
+
+
         <section class="content-section container">
+            
 
-            <h2 class="header">Line Follower 2000</h2>
+            <p class="gen_text">
 
-            <p class="gen_text"> Hello everyone! My name is Caleb Price. I'm currently a graduate student at Brigham Young University 
-                studying Electrical and Computer Engineering. I received my undergraduate from BYU in computer engineering. I did not always
-                want to be a computer engineer or in fact any engineer at all. I was born on a family farm in eastern washington, where I 
-                spent thousands of hours laboring in the fields and driving heavy machinery. I grew up playing football and running track and
-                learned to play the trumpet and piano. After graduating high school I decided to serve a christian mission in Cape Verde. 
-                This is a group of 10 islands off the west coast of Africa. I spent 2 years here, learning portuguese and 2 other african dialects,
-                while teaching the people about my faith and helping them with their daily lives. <br>
                 
-                <br>After my service I returned to Brigham Young University
-                intent on studying business marketing. I quickly became bored and decided to return to the world of numbers. I had little experience with
-                engineering outside of working on farm equipment so I decided to enter mechanical engineering. Along this journey I met my beautiful wife Bronte and 
-                have now been married for 4 years. After 2 years of mechanical engineering I finally took my first electrical class including circuits and coding.
-                I quickly fell in love and promptly changed my major to computer engineering. I have never regretted this decision and am happy that my long journey 
-                eventually lead me to this field. I am now pursuing my masters degree where my research is focused on the effects of radiation on Systems on Chips in 
-                harsh environments. Whether that be in space or military applications. I love tinkering with personal projects as you will find throughout this website. If 
-                you are my beautiful wife and actually made it through this long message know that I love you so very much and miss you dearly. This house is just too quiet when you 
-                are not around. Love you honey.
-                <br>
-                <br>
-                Oh and I forgot to mention a married a total BABE!
+                <div class="list_container">
+                    <h1 class="header">Main Concepts</h1>
+                    <ul class="styled-list">                        
+                        <li>Bluetooth Low Energy </li>
+                        <li>Python</li>
+                        <li>Raspberry PI Programming</li>
+                        <li>Platform IO (VS Code)</li>
+                        <li>Stepper motor controls</li>
+                    </ul>
+                </div>
 
+                <div class="list_container">
+                    <h1 class="header">Materials Used</h1>
+                    <ul class="styled-list">
+                        <li>Raspberry Pi Pico W (Microcontroller on car)</li>
+                        <li>Raspberry PI 4b (Powering touchscreen)</li>
+                        <li>H-Brigde Power distribuiton</li>
+                        <li>2 DC Motors</li>
+                        <li>Custom designed platform and steering mechanism</li>
+                        <li>Stepper Motor</li>
+                    </ul>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Summary</h1>
+                    <div class ="summary">
+                        Bluetooth has always been something I wanted to expereiment with and this car was my chance. I wanted to step away from arduino and try something new. 
+                        This decisission lead me to the Raspberry PI market and I really enjoyed the switch. Having a full operating system on such a small device yet still having the 
+                        easy acces to the GPIO opened up a whole bunch of possibilities. In this project I mainly focuse on using Bluetooth low enery with a couple GPIO's to handle the controls 
+                        of the car. I used a stepper motor to drive the steering mechanism that I designed. This allow for much smoother steering and better control of the vehicle.
+                        <br><br>
+                        The project as always proved to be more challenging then I expected. Just designing the car and printing everything took 10+ hours. After that I began messing around with the bluetooth
+                        which I was very comfortable with byte manipulation in C and C++ but it took me a second to understand how to do this in python. I also had the fun challenge of mixing an operating 
+                        system with a bare metal system. I was pretty happy with the end product but learned why remote controlled cars use radio frequency and not bluetooth as the car ran out of range at about 
+                        30 feet. 
+               
+                    </div>
+                </div>
+
+                <div class="list_container">
+                    <h1 class="header">Source Code</h1>
+                    <ul class="styled-list">
+                        <li><a href="https://github.com/pr1ce1227/BLE_Car">GitHub_Repo</a></li>
+                        
+                    </ul>
+                </div>
             
             </p>
             <footer class="contact-info">
@@ -67,6 +103,7 @@
                 </ul>
             </footer>
         </section>
+ 
  
 
 

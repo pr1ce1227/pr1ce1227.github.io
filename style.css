@@ -72,7 +72,7 @@ html, body {
 
 .projects-header{
     padding: 3px 1em;
-    font-size: min(max(20px, 4vw),  40px);
+    font-size: min(max(20px, 5vw),  40px);
     color: white;
     background-color: rgba(1, 54, 85, 0.5);
     border: 1em solid #e7e6e5;

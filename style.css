@@ -72,7 +72,7 @@ html, body {
 
 .projects-header{
     padding: 3px 1em;
-    font-size: min(max(28px, 5vw),  40px);
+    font-size: min(max(36px, 5vw),  40px);
     color: white;
     background-color: rgba(1, 54, 85, 0.5);
     border: 1em solid #e7e6e5;
@@ -296,7 +296,7 @@ html, body {
     position: relative;
     font-family: "PTSAN";
     text-align: center;
-    font-size: min(max(2vw, 5vw), 72px);
+    font-size: min(max(40px, 5vw), 72px);
 }
 
 .list_container {

@@ -27,10 +27,11 @@ html, body {
 
 .title {
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     font-family: "PTSAN"; 
     margin: .25em;
 }
+
 
 .nav ul{
     margin: 0; 
@@ -49,7 +50,7 @@ html, body {
     text-decoration: none;
     color: white;
     font-size: 2.5vw;
-    font-size: min(max(18px, 4vw), 32px);
+    font-size: min(max(18px, 4vw), 38px);
     text-decoration: none;
     font-family: "PTSAN";
 }

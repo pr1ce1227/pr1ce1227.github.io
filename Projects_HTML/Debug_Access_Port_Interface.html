@@ -62,18 +62,19 @@
                 <div class="list_container">
                     <h1 class="header">Summary</h1>
                     <div class ="summary">
-                        This was a very challenging low level software project that used the firmware of the JCM (JTAG interface). This project was tuff as most things were either not 
-                        documented well or were so heavily documented it was impossible to find anything. It was also challenging as once the signal left the jcm over the JTAG cable it 
-                        was very hard to see what was going on in the early stages. That being said I did eventually get this to work and it has proven to be very useful. Essentially what this 
-                        does is it gives us very low level acces to the board at run time including acces to the coresight registers and global address space. With this access I can querry processor
-                        registers and runtime to check things like the PC to see if they have been pushed off track. I can also set up "virtual" UARTs to each of the processors and pull of logs at runtime
-                        during a test. Not to mention with acces to the global address space and the NOC I virtually have acces to every peice of the board.  
+                        This was a very challenging low-level software project that utilized the firmware of the JCM (JTAG interface). The project was tough due to poor
+                         documentation, either there was too little information, or it was so extensive that finding anything useful was nearly impossible. Additionally, 
+                         it was difficult to track signals once they left the JCM over the JTAG cable, especially in the early stages.
                         <br><br>
-                        I learned a lot while working on this project, including that sometimes its faster to go a little slower. Working with the bits and various controllers (TAP and DAP) was tidious and 
-                        required exact precision. I also learned a little more about building custom libraries in C++ and was able to abstract all the heavy lifting from the user. It's as simple as writing
-                        a json file with the registers you want to read or write at run time and with a click of a button you have access to nearly the entire board. My work with this new feature has mainly
-                        been involved with the Xilin Versal ACAP chip.
-                    </div>
+                        Despite these challenges, I eventually got it to work, and it has proven to be very useful. Essentially, this project provides very low-level access to the board at runtime,
+                        including access to the CoreSight registers and global address space. With this access, I can query processor registers at runtime to check if the program counter 
+                        (PC) has deviated from its expected path. I can also set up "virtual" UARTs for each processor to pull logs at runtime during a test. Moreover, with access to the 
+                        global address space and the Network on Chip (NoC), I virtually have access to every part of the board.
+                        <br><br>
+                        I learned a lot while working on this project, including the importance of taking a slower, more methodical approach at times. Working with the bits and 
+                        various controllers (TAP and DAP) was tedious and required exact precision. I also gained experience in building custom libraries in C++ and was able to 
+                        abstract all the heavy lifting from the user. It's as simple as writing a JSON file with the registers you want to read or write at runtime, and with a 
+                        click of a button, you have access to nearly the entire board. My work with this new feature has mainly involved the Xilinx Versal ACAP chip.
                 </div>
 
                 <div class="list_container">
@@ -89,6 +90,7 @@
                 <ul>
                     <li>Email: calebsp12@gmail.com </li>
                     <li>Phone: 509-318-0862</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/calebprice1228" target="_blank">www.linkedin.com/in/calebprice1228</a></li>
                 </ul>
             </footer>
         </section>

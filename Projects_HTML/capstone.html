@@ -1,8 +1,9 @@
 <!DOCTYPE html>
     <head>
-        <title> Line_Follower_2000</title>
+        <title> Capstone</title>
         <meta name = "Bluetooth Car" content = "Personal Project">
         <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="Images/JCM_Setup" href="../Images/BYU_Stretch_Y_Logo.png">
     </head>
 
     <body>  
@@ -37,6 +38,12 @@
         <div class="diagram-container">
             <img src="../Images/Capstone.jpg" alt="Diagram" class="diagram">
         </div>
+        <div class="diagram-container">
+            <img src="../Images/Cap_Graph1.jpg" alt="Diagram" class="diagram">
+        </div>
+        <div class="diagram-container">
+            <img src="../Images/Cap_Part.jpg" alt="Diagram" class="diagram">
+        </div>
 
 
 
@@ -49,7 +56,7 @@
                 <div class="list_container">
                     <h1 class="header">Main Concepts</h1>
                     <ul class="styled-list">                        
-                        <li>Wheetstone Bridge (Highly Sensitive Resistors)</li>
+                        <li>Wheatstone Bridge (Sensitive Resistors)</li>
                         <li>Metal Machinary</li>
                         <li>Python Graphics (kivy)</li>
                         <li>Rasbian</li>
@@ -71,33 +78,37 @@
                 <div class="list_container">
                     <h1 class="header">Summary</h1>
                     <div class ="summary">
-                        For our Capstone project we were asked to develop a way to measure corn stalk stiffness to help in agricultural research and storm protection. We developed
-                        the final product shown above. This is one of the projects that I wish I would have taken more pictures. However in the picture you can see the 2 metal bars 
-                        (whiskers) in front of and behind the sensor. These wisker are atatched to 2 encoders that with a couple of algorithms give the direction that the robot is currently 
-                        facing. More specifically at what angle is it headed in relation to the corn row. We then have the main sensor in the middle which is hooked up to wheetstone bridge capable 
-                        of measuring very suddle forces applied along the shaft. There is one in the x axis and one in the y axis. By taking the combined force in these direction and the angle 
-                        that the robot is to the corn stalk row we are able to solve for how much force the corn stalk is able to push back agains our sensor. It's a little more complicated then 
-                        that but it give you the general idea. For a more detail report look into the pdf below. 
+                        For our Capstone project, we were tasked with developing a system to measure corn stalk stiffness to aid in agricultural research and storm protection. 
+                        Our final product is shown above. In the picture, you can see two 
+                        metal bars (whiskers) positioned in front of and behind the sensor. These whiskers are attached to two encoders that, along with some algorithms, 
+                        determine the robot's current direction. More specifically, they provide the angle at which the robot is heading relative to the corn row.
                         <br><br>
-                        My team was made up of 3 mechanical, 2 electrical and 1 computer engineer, myself. My task was to handle all the graphics and data processing on board. We didn't process all the 
-                        datat live as the PI wasn't strong enough for such a task. I simply need to read the sensors and store it in a format that could be offloaded later. I had never used kivy graphics 
-                        before and after using it am sure there is a better solution. However the sponsor of the project had some pre-built code that we needed to encorporated into the project. Long 
-                        story short I eventually got it working and learned why I am not a front-end engineer. That being said I really enjoyed working with my teamates, everyone was motivated and skilled
-                        in their own areas. Although this wasn't the most glamorous project it really helped open my eyes as what its like to work on a long term project (1 year) with multiple 
-                        engineering fields. Our goal was to have a working product that we would be able to hand off to researchers to use in the field. We were barely able to accomplish this task by the end 
-                        of the year. 
+                        The main sensor in the middle is connected to a Wheatstone bridge capable of measuring very subtle forces applied along the shaft, with one sensor for the x-axis and another
+                        for the y-axis. By combining the forces in these directions and the robot's angle to the corn stalk row, we can calculate the force the corn stalk exerts against 
+                        our sensor. While the process is a bit more complicated, this gives a general idea. For more detailed information, please refer to the PDF below.
                         <br><br>
-                        Our sponsor was pleased with the result and impressed with our new ideas. In the video you can see we have it mounted to a FARM-ng robot. This is not a part of the project we just
-                        needed a robot that we could test the sensor on. In theory it could easily be mounted to another peice of farm equipment that is already passing through the field like a sprayer and collect 
-                        data during normal operations. Overall it was much harder than it sound but we were able to create the working sensor with custom machined parts, 2 custom PCB's and a working user interface. 
-               
+                        My team consisted of three mechanical engineers, two electrical engineers, and one computer engineer (myself). My role was to handle all graphics and data 
+                        processing onboard. We didn't process all the data live as the Raspberry Pi wasn't powerful enough for that task. Instead, I needed to read the sensors
+                        and store the data in a format that could be offloaded later.
+                        <br><br>
+                        I had never used Kivy for graphics before, but I had some pre-built code from the project sponsor. Ultimately, I got it working, and I learned
+                        why I am not a front-end engineer. Despite the challenges, I enjoyed working with my teammates, who were all motivated and skilled in their respective areas. 
+                        This project, though not the most glamorous, opened my eyes to the experience of working on a long-term (one year) project with multiple engineering fields. 
+                        Our goal was to create a functional product that researchers could use in the field, and we managed to achieve this by the end of the year.
+                        <br><br>
+                        Our sponsor was pleased with the result and impressed with our innovative ideas. In the video, you can see the sensor mounted on a FARM-ng robot, 
+                        which we used for testing purposes. Although this robot was not part of the project, the sensor could theoretically be mounted on other peice farm equipment, such as a sprayer,
+                        to collect data during normal operations.
+                        <br><br>
+                        Overall, this project was more challenging than we originally thought, but we succeeded in creating a working sensor with custom machined parts, two custom PCBs, 
+                        and a functional user interface.
                     </div>
                 </div>
 
                 <div class="list_container">
                     <h1 class="header">Source Code</h1>
                     <ul class="styled-list">
-                        <li><a href="https://github.com/pr1ce1227/BLE_Car">GitHub_Repo</a></li>
+                        <li><a href="../Images/team_09_system_refinement_review.pdf">Capstone_PDF</a></li>
                         
                     </ul>
                 </div>
@@ -108,6 +119,7 @@
                 <ul>
                     <li>Email: calebsp12@gmail.com </li>
                     <li>Phone: 509-318-0862</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/calebprice1228" target="_blank">www.linkedin.com/in/calebprice1228</a></li>
                 </ul>
             </footer>
         </section>

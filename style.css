@@ -27,7 +27,7 @@ html, body {
 
 .title {
     text-align: center;
-    font-size: 5em;
+    font-size: min(max(18px, 5vw), 38px);
     font-family: "PTSAN"; 
     margin: .25em;
 }

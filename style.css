@@ -172,21 +172,6 @@ html, body {
     max-height: 500px;
 }
 
-/* Styles for screens less than 600px wide */
-@media (orientation : portrait) and (max-device-width : 1223px) {
-    .projects {
-        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-        padding: 0.5em;
-    }
-
-    .project {
-        max-height: 1000px;
-    }
-}
-
-
-
-
 
 .project_pic {
     width: 350px; /* Set a fixed width for the container */
@@ -200,17 +185,44 @@ html, body {
     align-items: center;
 }
 
+.project_details {
+    width: 100%; /* Ensure the text container takes full width of the parent */
+    text-align: center; /* Center the text */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+    font-size: min(max(2vw, 4vw), 22px);
+}
+
+/* Styles for screens less than 600px wide */
+@media (orientation : portrait) and (max-device-width : 1223px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+        padding: 0.5em;
+    }
+
+    .project {
+        max-height: 1000px;
+    }
+
+    .project_pic {
+        width: 500px; /* Set a fixed width for the container */
+        height: 450px; /* Set a fixed height for the container */
+        overflow: hidden; /* Hide any overflow */
+        border-radius: 1em;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+        margin: 0 auto; /* Center the project container horizontally on the page */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .project_pic img {
     width: 100%; /* Ensure the image fills the container */
     height: 100%; /* Ensure the image fills the container */
     object-fit: contain; /* Maintain the aspect ratio and contain the image within the container */
 }
 
-.project_details {
-    width: 100%; /* Ensure the text container takes full width of the parent */
-    text-align: center; /* Center the text */
-    box-sizing: border-box; /* Include padding and border in the element's width */
-}
+
 
 
 .project_details strong,

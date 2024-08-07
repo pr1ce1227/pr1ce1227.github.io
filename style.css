@@ -72,7 +72,7 @@ html, body {
 
 .projects-header{
     padding: 3px 1em;
-    font-size: min(max(20px, 5vw),  40px);
+    font-size: min(max(28px, 5vw),  40px);
     color: white;
     background-color: rgba(1, 54, 85, 0.5);
     border: 1em solid #e7e6e5;
@@ -190,7 +190,7 @@ html, body {
     width: 100%; /* Ensure the text container takes full width of the parent */
     text-align: center; /* Center the text */
     box-sizing: border-box; /* Include padding and border in the element's width */
-    font-size: min(max(24px, 3vw), 26px);
+    font-size: min(max(24px, 3vw), 28px);
 }
 
 /* Styles for screens less than 600px wide */

@@ -27,7 +27,7 @@ html, body {
 
 .title {
     text-align: center;
-    font-size: min(max(18px, 5vw), 38px);
+    font-size: min(max(64px, 5vw), 54px);
     font-family: "PTSAN"; 
     margin: .25em;
 }
@@ -190,7 +190,7 @@ html, body {
     width: 100%; /* Ensure the text container takes full width of the parent */
     text-align: center; /* Center the text */
     box-sizing: border-box; /* Include padding and border in the element's width */
-    font-size: min(max(2vw, 4vw), 22px);
+    font-size: min(max(24px, 3vw), 26px);
 }
 
 /* Styles for screens less than 600px wide */
@@ -214,6 +214,13 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .project_details {
+        width: 100%; /* Ensure the text container takes full width of the parent */
+        text-align: center; /* Center the text */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+        font-size: min(max(24px, 3vw), 26px);
     }
 }
 

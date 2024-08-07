@@ -205,8 +205,8 @@ html, body {
     }
 
     .project_pic {
-        width: 500px; /* Set a fixed width for the container */
-        height: 450px; /* Set a fixed height for the container */
+        width: 700px; /* Set a fixed width for the container */
+        height: 650px; /* Set a fixed height for the container */
         overflow: hidden; /* Hide any overflow */
         border-radius: 1em;
         box-shadow: 3px 3px 8px rgba(0,0,0,0.1);

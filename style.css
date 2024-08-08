@@ -151,7 +151,7 @@ html, body {
     font-family: "PTSAN";
     position: relative;
     font-family: "PTSAN";
-    font-size: min(max(2vw, 4vw), 26px);
+    font-size: min(max(2vw, 4vw), 34px);
 }
 
 .large_text{
@@ -321,13 +321,13 @@ html, body {
     padding-left: 20px;
     margin-bottom: 10px;
     font-size: 2vw;
-    font-size: min(18vw, 20px);
+    font-size: min(18vw, 30px);
     color: #000000;
 }
 
 .summary{
     font-size: 2vw;
-    font-size: min(18vw, 20px);
+    font-size: min(18vw, 30px);
 }
 
 .styled-list li:before {
@@ -337,7 +337,7 @@ html, body {
     top: 50%; /* Align vertically to the middle of the text */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: #015974; /* Bullet color */
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1;
 }
 

@@ -142,7 +142,7 @@ html, body {
     max-width: 1100px;
     clear: both;
     font-family: "PTSAN_B"; 
-    font-size: min(max(14px, 4vw), 22px);
+    font-size: min(max(14px, 4vw), 26px);
     align-self: flex-start; /* Aligns the item to the left within the flex container */
 }
 
@@ -298,7 +298,7 @@ html, body {
     padding-left: 30px; /* Space for the bullet */
     margin-bottom: 10px;
     font-size: 2vw;
-    font-size: min(18vw, 24px);
+    font-size: min(18vw, 30px);
     color: #000000;
 }
 
@@ -383,7 +383,7 @@ html, body {
         max-width: 1100px;
         clear: both;
         font-family: "PTSAN_B"; 
-        font-size: min(max(20px, 4vw), 24px);
+        font-size: min(max(26px, 4vw), 26px);
         align-self: flex-start; /* Aligns the item to the left within the flex container */
     }
 }

@@ -25,6 +25,11 @@ html, body {
 /* Header */
 /* ****** */
 
+
+.header{
+    font-size: min(max(24px, 8vw), 30px);
+}
+
 .title {
     text-align: center;
     font-size: min(max(64px, 5vw), 54px);
@@ -129,7 +134,7 @@ html, body {
     float: left;
     width: 10vw; 
     width: min(max(250px, 10vw), 350px);
-    margin: 0 20px 0 0; 
+    margin: 20px 20px 0 0; 
     border-radius: 10px;
 }
 
@@ -137,7 +142,7 @@ html, body {
     max-width: 1100px;
     clear: both;
     font-family: "PTSAN_B"; 
-    font-size: min(max(14px, 4vw), 26px);
+    font-size: min(max(14px, 4vw), 22px);
     align-self: flex-start; /* Aligns the item to the left within the flex container */
 }
 
@@ -193,36 +198,7 @@ html, body {
     font-size: min(max(24px, 3vw), 28px);
 }
 
-/* Styles for screens less than 600px wide */
-@media (orientation : portrait) and (max-device-width : 1223px) {
-    .projects {
-        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-        padding: 0.5em;
-    }
 
-    .project {
-        max-height: 1000px;
-    }
-
-    .project_pic {
-        width: 700px; /* Set a fixed width for the container */
-        height: 650px; /* Set a fixed height for the container */
-        overflow: hidden; /* Hide any overflow */
-        border-radius: 1em;
-        box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
-        margin: 0 auto; /* Center the project container horizontally on the page */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project_details {
-        width: 100%; /* Ensure the text container takes full width of the parent */
-        text-align: center; /* Center the text */
-        box-sizing: border-box; /* Include padding and border in the element's width */
-        font-size: min(max(50px, 3vw), 40px);
-    }
-}
 
 .project_pic img {
     width: 100%; /* Ensure the image fills the container */
@@ -306,9 +282,8 @@ html, body {
     padding: 20px 40px;
     max-width: 900px;
     width: 100%;
-    margin: 25px; 
+    margin: 25px;
     align-self: center;
-
 }
 
 .styled-list {
@@ -317,27 +292,34 @@ html, body {
 }
 
 .styled-list li {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px; /* Space for the bullet */
     margin-bottom: 10px;
     font-size: 2vw;
-    font-size: min(18vw, 30px);
+    font-size: min(18vw, 24px);
     color: #000000;
 }
 
-.summary{
+.styled-list li > span {
+    display: flex;
+    align-items: center; /* Center align text vertically */
+}
+
+.summary {
     font-size: 2vw;
-    font-size: min(18vw, 30px);
+    font-size: min(18vw, 24px);
 }
 
 .styled-list li:before {
     content: '•';
     position: absolute;
     left: 0;
-    top: 50%; /* Align vertically to the middle of the text */
-    transform: translateY(-50%); /* Adjust vertical alignment */
+    top: 0; /* Align with the top row */
+    transform: translateY(); /* No need to adjust vertical alignment */
     color: #015974; /* Bullet color */
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1;
 }
 
@@ -358,4 +340,51 @@ html, body {
     
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Styles for screens less than 600px wide */
+@media (orientation : portrait) and (max-device-width : 1223px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+        padding: 0.5em;
+    }
+
+    .project {
+        max-height: 1000px;
+    }
+
+    .project_pic {
+        width: 700px; /* Set a fixed width for the container */
+        height: 650px; /* Set a fixed height for the container */
+        overflow: hidden; /* Hide any overflow */
+        border-radius: 1em;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+        margin: 0 auto; /* Center the project container horizontally on the page */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_details {
+        width: 100%; /* Ensure the text container takes full width of the parent */
+        text-align: center; /* Center the text */
+        box-sizing: border-box; /* Include padding and border in the element's width */
+        font-size: min(max(50px, 3vw), 40px);
+    }
+
+    .contact-center {
+        font-family: "PTSAN";
+       text-align: center;
+       font-size: min(max(20px, 4vw),  36px);
+    }
+
+    .contact-info {
+        max-width: 1100px;
+        clear: both;
+        font-family: "PTSAN_B"; 
+        font-size: min(max(14px, 4vw), 18px);
+        align-self: flex-start; /* Aligns the item to the left within the flex container */
+    }
 }
